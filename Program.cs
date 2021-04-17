@@ -19,44 +19,55 @@ namespace Task8v5
             int countTwoDigit = 0;
             int countThreeDigit = 0;
             int countDigit = 0;
+            int tmpInput = 0;
 
             for (int i = 0; i < numbersArray.Length; i++)
             {
-                Console.Write($"Введите {i + 1} число массива: ");
-                input = Console.ReadLine();
-                numbersArray[i] = int.Parse(input);
+                while (tmpInput < 1 || tmpInput > 999)
+                {
+                    Console.Write($"Введите {i + 1} число массива(от 1 до 999): ");
+                    input = Console.ReadLine();
+                    numbersArray[i] = int.Parse(input);
+
+                    if (tmpInput < 1 || tmpInput > 999)
+                    {
+                        Console.WriteLine("Введено неправильное число");
+                    }
+                }
             }
 
             int tmp;
             for (int i = 0; i < numbersArray.Length; i++)
             {
                 tmp = numbersArray[i];
-                while(tmp >= 1)
+                while (tmp >= 1)
                 {
                     tmp /= 10;
                     countDigit++;
                 }
-                
-                switch(countDigit)
+
+                switch (countDigit)
                 {
                     case 1:
-                    {
-                        countSingleDigit++;
-                        break;
-                    }
+                        {
+                            countSingleDigit++;
+                            break;
+                        }
                     case 2:
-                    {
-                        countTwoDigit++;
-                        break;
-                    }
+                        {
+                            countTwoDigit++;
+                            break;
+                        }
                     case 3:
-                    {
-                        countThreeDigit++;
-                        break;
-                    }
+                        {
+                            countThreeDigit++;
+                            break;
+                        }
                 }
                 countDigit = 0;
             }
+
+            Console.WriteLine($"Однозначных чисел = {countSingleDigit}, двухзначных чисел = {countTwoDigit}, трехзначных чисел = {countThreeDigit}");
 
         }
     }

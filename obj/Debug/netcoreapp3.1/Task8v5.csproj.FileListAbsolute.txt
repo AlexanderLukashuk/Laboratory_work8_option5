@@ -1,0 +1,12 @@
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/bin/Debug/netcoreapp3.1/Task8v5.deps.json
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/bin/Debug/netcoreapp3.1/Task8v5.runtimeconfig.json
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/bin/Debug/netcoreapp3.1/Task8v5.runtimeconfig.dev.json
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/bin/Debug/netcoreapp3.1/Task8v5.dll
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/bin/Debug/netcoreapp3.1/Task8v5.pdb
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/obj/Debug/netcoreapp3.1/Task8v5.csprojAssemblyReference.cache
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/obj/Debug/netcoreapp3.1/Task8v5.AssemblyInfoInputs.cache
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/obj/Debug/netcoreapp3.1/Task8v5.AssemblyInfo.cs
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/obj/Debug/netcoreapp3.1/Task8v5.csproj.CoreCompileInputs.cache
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/obj/Debug/netcoreapp3.1/Task8v5.dll
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/obj/Debug/netcoreapp3.1/Task8v5.pdb
+/Users/sanya/работа/вариант_5/Лабораторка_8/Task8v5/obj/Debug/netcoreapp3.1/Task8v5.genruntimeconfig.cache
