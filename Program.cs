@@ -27,11 +27,15 @@ namespace Task8v5
                 {
                     Console.Write($"Введите {i + 1} число массива(от 1 до 999): ");
                     input = Console.ReadLine();
-                    numbersArray[i] = int.Parse(input);
+                    tmpInput = int.Parse(input);
 
                     if (tmpInput < 1 || tmpInput > 999)
                     {
                         Console.WriteLine("Введено неправильное число");
+                    }
+                    else
+                    {
+                        numbersArray[i] = tmpInput;
                     }
                 }
             }
