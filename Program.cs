@@ -23,21 +23,22 @@ namespace Task8v5
 
             for (int i = 0; i < numbersArray.Length; i++)
             {
-                while (tmpInput < 1 || tmpInput > 999)
-                {
-                    Console.Write($"Введите {i + 1} число массива(от 1 до 999): ");
-                    input = Console.ReadLine();
-                    tmpInput = int.Parse(input);
+                Console.Write($"Введите {i + 1} число массива(от 1 до 999): ");
+                input = Console.ReadLine();
+                tmpInput = int.Parse(input);
 
-                    if (tmpInput < 1 || tmpInput > 999)
+                if (tmpInput < 1 || tmpInput > 999)
+                {
+                    while (tmpInput < 1 || tmpInput > 999)
                     {
                         Console.WriteLine("Введено неправильное число");
-                    }
-                    else
-                    {
-                        numbersArray[i] = tmpInput;
+                        Console.Write("Попробуйте ввести число еще раз(ОТ 1 ДО 100): ");
+                        input = Console.ReadLine();
+                        tmpInput = int.Parse(input);
                     }
                 }
+
+                numbersArray[i] = tmpInput;
             }
 
             int tmp;
