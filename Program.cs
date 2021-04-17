@@ -9,7 +9,7 @@ namespace Task8v5
             //* 1. Дано число n. Определить сколько среди них 
             //*однозначных, двухзначных, трехзначных.
 
-            string input;
+            /*string input;
             int size;
             Console.Write("Введите размер массива: ");
             input = Console.ReadLine();
@@ -72,8 +72,20 @@ namespace Task8v5
                 countDigit = 0;
             }
 
-            Console.WriteLine($"Однозначных чисел = {countSingleDigit}, двухзначных чисел = {countTwoDigit}, трехзначных чисел = {countThreeDigit}");
+            Console.WriteLine($"Однозначных чисел = {countSingleDigit}, двухзначных чисел = {countTwoDigit}, трехзначных чисел = {countThreeDigit}");*/
 
+
+            //* 2. Решить уравнение x2-ln (1+x)-3=0, х=[2;3], с шагом 0,2
+
+            double x = 2;
+            double y;
+            //Console.WriteLine($"{Math.Log(1 - 2)}");
+            while (x <= 3)
+            {
+                y = Math.Pow(x, 2) - Math.Log(1 - x) - 3;
+                Console.WriteLine($"y = {y}");
+                x += 0.2;
+            }
         }
     }
 }
