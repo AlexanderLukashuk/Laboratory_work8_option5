@@ -82,8 +82,19 @@ namespace Task8v5
             //Console.WriteLine($"{Math.Log(1 - 2)}");
             while (x <= 3)
             {
-                y = Math.Pow(x, 2) - Math.Log(1 - x) - 3;
-                Console.WriteLine($"y = {y}");
+                //y = Math.Pow(x, 2) - Math.Log(1 - x) - 3;
+                y = Math.Pow(x, 2) - Math.Log(1, Math.E) * Math.Log(x, Math.E) - 3;
+                //Console.WriteLine($"y = {y}");
+
+                if (y == 0)
+                {
+                    Console.WriteLine($"y({y}) равен 0");
+                }
+                else
+                {
+                    Console.WriteLine($"y({y}) не равен 0");
+                }
+                
                 x += 0.2;
             }
         }
